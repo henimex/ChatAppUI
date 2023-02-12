@@ -12,7 +12,9 @@ export class RegisterComponent implements OnInit {
   model: any = {}
   @Output() cancelRegisterFromChild = new EventEmitter();
 
-  constructor(private authService:AuthService, private alert:AlertifyService) {
+  constructor(
+    private authService:AuthService,
+    private alert:AlertifyService) {
   }
 
   ngOnInit(): void {
